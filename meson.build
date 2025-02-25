@@ -9,12 +9,12 @@ project(
 )
 
 # Check for the fast Mold linker
-mold_check = run_command('sh', '-c', 'ld --version | grep mold', check: false)
+mold_check = run_command('which', 'mold', check: false)
 if mold_check.returncode() == 0
   add_project_arguments('-fuse-ld=mold', language: 'c')
 endif
 
-sdl3_dep = dependency('sdl3', required : true)
+raylib = dependency('raylib', required : true)
 
-binary = executable('fiscatal', 'src/main.c', install: true, dependencies: sdl3_dep)
+binary = executable('fiscatal', 'src/main.c', install: true, dependencies: raylib)
 run_command('strip', binary.full_path(), check: false)

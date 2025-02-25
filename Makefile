@@ -12,5 +12,5 @@ pgo: # WIP
 	meson compile -C build
 
 clean:
-	rm -rf build .cache
+	rm -rf build .cache config.ini
 	mkdir build

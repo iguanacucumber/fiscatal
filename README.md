@@ -2,13 +2,12 @@
 
 ## dependencies
 
-- SDL3
-- SDL3_ttf
+- [Raylib](https://github.com/raysan5/raylib)
 
 ### Install those depencies with Pacman
 
 ```sh
-paru -S --noconfirm sdl3-git sdl3_ttf-git
+paru -S --noconfirm raylib
 ```
 
 ```sh
