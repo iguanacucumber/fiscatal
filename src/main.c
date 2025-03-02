@@ -111,14 +111,10 @@ int main(void) {
 
 		ClearBackground(RAYWHITE);
 
-		if (config.useVSync) {
-			DrawText(TextFormat("VSync: ON (%d Hz)", monitorRefreshRate), 190, 180, 20, LIGHTGRAY);
-		} else {
-			DrawText(TextFormat("Fixed FPS: %d Hz", monitorRefreshRate), 190, 180, 20, LIGHTGRAY);
-		}
+		int MonitorTopX = config.screenWidth - 90;
 
 		if (config.showFPS) {
-			DrawFPS(config.screenWidth - 90, 10);
+			DrawFPS(MonitorTopX, 10);
 		}
 
 		EndDrawing();
