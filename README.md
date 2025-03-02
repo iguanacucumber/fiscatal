@@ -1,5 +1,3 @@
-# FiscAtal
-
 ## dependencies
 
 - [Raylib](https://github.com/raysan5/raylib)
@@ -11,8 +9,10 @@
 paru -S --noconfirm raylib
 # OR
 make deps # Compile a Wayland version of raylib if needed
-# Overide your system wayland
+# Overide your system raylib !!!
 ```
+
+## Build
 
 ```sh
 make setup # Update build config
