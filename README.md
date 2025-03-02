@@ -5,6 +5,12 @@
 
 ### Install those depencies
 
+First clone this repo:
+
+```sh
+git clone --depth 1 --recurse-submodules https://github.com/iguanacucumber/fiscatal
+```
+
 ```sh
 paru -S --noconfirm raylib
 # OR
