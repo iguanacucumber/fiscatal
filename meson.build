@@ -4,7 +4,7 @@ project(
 	version: '0.1',
 	default_options: [
 		'warning_level=3',
-		'c_args=-flto -O3 -ffast-math -march=native -mtune=native -fomit-frame-pointer',
+		'c_args=-flto -O2 -march=native -mtune=native -ftree-vectorize -fomit-frame-pointer',
 	],
 )
 
